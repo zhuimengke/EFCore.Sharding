@@ -69,7 +69,8 @@ namespace EFCore.Sharding
             builder.UseLoggerFactory(_loggerFactory);
 
             provider.UseDatabase(builder, dbConnection);
-            builder.ReplaceService<IModelCacheKeyFactory, GenericModelCacheKeyFactory>();
+            //builder.ReplaceService<IModelCacheKeyFactory, GenericModelCacheKeyFactory>();
+            builder.ReplaceService<IModelCacheKeyFactory, TenantModelCacheKeyFactory>();
             builder.ReplaceService<IMigrationsModelDiffer, ShardingMigration>();
 
             return new GenericDbContext(builder.Options, dbContextParamters, eFCoreShardingOptions, _serviceProvider);

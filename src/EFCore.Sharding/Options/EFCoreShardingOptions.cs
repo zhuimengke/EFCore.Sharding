@@ -99,5 +99,20 @@ namespace EFCore.Sharding
         }
 
         internal static Action<IServiceProvider> Bootstrapper;
+
+        /// <summary>
+        /// 租户Id字段名
+        /// </summary>
+        public string TenantIdField { get; set; } = "TenantId";
+
+        /// <summary>
+        ///是否使用租户模式,默认否
+        /// </summary>
+        public bool TenantMode{ get; set; } = false;
+
+        /// <summary>
+        /// 获取租户Id
+        /// </summary>
+        public Func<string> GetTenantId { get; set; }
     }
 }
