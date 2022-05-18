@@ -4,6 +4,12 @@
     <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
     <!--打包-->
     <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+    <PackageId>$(AssemblyName).MultiTenant</PackageId>
+    <Authors>zhike</Authors>
+    <Company>zhike</Company>
+    <Product>$(AssemblyName).MultiTenant</Product>
+    <Description>EFCore.Sharding 添加租户处理功能</Description>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
