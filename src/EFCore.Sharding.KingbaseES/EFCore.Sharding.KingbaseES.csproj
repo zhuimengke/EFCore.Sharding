@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+     <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
+     <!--打包-->
+    <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+    <Version>1.0.7</Version>
+  </PropertyGroup>
+<ItemGroup>
+    <ProjectReference Include="..\EFCore.Sharding\EFCore.Sharding.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<Content Include="..\KingbaseES.lib\netstandard2.1\Kdbndp.dll" Pack="true" PackagePath="lib\netstandard2.1" />
+		<Content Include="..\KingbaseES.lib\netstandard2.1\Kdbndp.EntityFrameworkCore.KingbaseES.dll" Pack="true" PackagePath="lib\netstandard2.1" />
+		<Content Include="..\KingbaseES.lib\net6.0\Kdbndp.dll" Pack="true" PackagePath="lib\net6.0" />
+		<Content Include="..\KingbaseES.lib\net6.0\Kdbndp.EntityFrameworkCore.KingbaseES.dll" Pack="true" PackagePath="lib\net6.0" />
+	</ItemGroup>
+	 <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.1'">
+	  <Reference Include="Kdbndp">
+	    <HintPath>..\KingbaseES.lib\netstandard2.1\Kdbndp.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Kdbndp.EntityFrameworkCore.KingbaseES">
+	    <HintPath>..\KingbaseES.lib\netstandard2.1\Kdbndp.EntityFrameworkCore.KingbaseES.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+ <ItemGroup Condition="'$(TargetFramework)'=='net6.0'">
+	  <Reference Include="Kdbndp">
+	    <HintPath>..\KingbaseES.lib\net6.0\Kdbndp.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Kdbndp.EntityFrameworkCore.KingbaseES">
+	    <HintPath>..\KingbaseES.lib\net6.0\Kdbndp.EntityFrameworkCore.KingbaseES.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+</Project>

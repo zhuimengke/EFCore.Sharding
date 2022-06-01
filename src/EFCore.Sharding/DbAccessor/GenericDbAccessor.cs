@@ -130,7 +130,7 @@ namespace EFCore.Sharding
                     case UpdateType.Divide: setValueBody = $" {formatedField} / {paramterName} "; break;
                     case UpdateType.Concat:
                         {
-                            var symbol = new DatabaseType[] { DatabaseType.PostgreSql, DatabaseType.Oracle, DatabaseType.SQLite }
+                            var symbol = new DatabaseType[] { DatabaseType.PostgreSql, DatabaseType.Oracle, DatabaseType.SQLite, DatabaseType.KingbaseES }
                                 .Contains(_db.Paramter.DbType) ? "||" : "+";
                             setValueBody = $" {formatedField} {symbol} {paramterName} ";
                         }; break;

@@ -28,6 +28,10 @@
         /// <summary>
         /// SQLite数据库
         /// </summary>
-        SQLite
+        SQLite,
+        /// <summary>
+        /// 人大金仓数据库
+        /// </summary>
+        KingbaseES
     }
 }

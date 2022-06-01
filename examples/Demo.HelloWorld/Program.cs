@@ -21,7 +21,7 @@ namespace Demo.HelloWorld
             {
                 config.SetEntityAssemblies(typeof(Base_UnitTest).Assembly);
 
-                config.UseDatabase(Config.SQLITE1, DatabaseType.SQLite);
+                config.UseDatabase(Config.Kdbndp, DatabaseType.KingbaseES);
             });
             var serviceProvider = services.BuildServiceProvider();
             new EFCoreShardingBootstrapper(serviceProvider).StartAsync(default).Wait();

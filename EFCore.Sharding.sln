@@ -45,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore.Sharding.KingbaseES", "src\EFCore.Sharding.KingbaseES\EFCore.Sharding.KingbaseES.csproj", "{7D719AB7-0FA1-4DC7-80B5-FA59D84F091A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{1E3EFDCE-9270-4C97-9EFF-A5B6C8F9D33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E3EFDCE-9270-4C97-9EFF-A5B6C8F9D33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E3EFDCE-9270-4C97-9EFF-A5B6C8F9D33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D719AB7-0FA1-4DC7-80B5-FA59D84F091A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D719AB7-0FA1-4DC7-80B5-FA59D84F091A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D719AB7-0FA1-4DC7-80B5-FA59D84F091A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D719AB7-0FA1-4DC7-80B5-FA59D84F091A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +127,7 @@ Global
 		{35C78CEB-C398-4FA8-885E-CC926F897924} = {16DEE8FC-5EDE-42DF-9386-528F579C166D}
 		{42C58FAE-AFCC-437F-9225-6AF4A47DFBB3} = {A8EA1A26-EA0A-4647-A69F-48204A7AA9A0}
 		{1E3EFDCE-9270-4C97-9EFF-A5B6C8F9D33A} = {16DEE8FC-5EDE-42DF-9386-528F579C166D}
+		{7D719AB7-0FA1-4DC7-80B5-FA59D84F091A} = {A8EA1A26-EA0A-4647-A69F-48204A7AA9A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {777B6C86-08A0-4823-83C5-4DE00B557828}
